@@ -29,7 +29,7 @@ jobs:
       - name: Build and push container image to registry
         uses: azure/container-apps-deploy-action@v1
         with:
-          appSourcePath: ${{ github.workspace }}/home/knoldus/Downloads/demo (2)/deployment-testing 
+          appSourcePath: ${{ github.workspace }}
           registryUrl: azuresampleproject.azurecr.io
           registryUsername: ${{ secrets.DEMOAPPLICATION_REGISTRY_USERNAME }}
           registryPassword: ${{ secrets.DEMOAPPLICATION_REGISTRY_PASSWORD }}
